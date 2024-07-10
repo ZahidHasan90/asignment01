@@ -1,21 +1,286 @@
-* {
+body {
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
 
-.parent{
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background: #f4f4f4;
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header .btn {
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+.hero {
+    background: #e0f7fa;
+    color: #333;
+    text-align: center;
+    padding: 100px 0;
+    background-image:url("images/Hero-bg.png");
+}
+
+.hero img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    width: 70%;
+    margin: 20px auto;
+}
+
+.hero .btn {
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+.targets{
+    width: 1140px;
+    margin: 111px 0;
+  
+  
+}
+.targets-container{
+    display: flex;
+    justify-content: space-between;
     width: 1140;
-    height: 1395;
-    color:black;
+    height: 1393;
+    gap: 32px;
+
+
+}
+.targets h2{
+    color: rgb(13, 19, 33);
+font-family: Azeret Mono;
+font-size: 32px;
+font-weight: 800;
+line-height: 37px;
+letter-spacing: 0%;
+text-align: center;
+}
+.targets .target1{ 
+position: static;
+width: 364px;
+height: 300px;
+padding: 40px;;
+order: 0;
+margin: 0px 24px;
+border-radius: 16px;
+background: rgba(255, 76, 30, 0.05);
+}
+.targets .target2{
+position: static;
+width: 364px;
+height: 300px;
+padding: 40px;
+order: 1;
+margin: 0px 24px;
+border-radius: 16px;
+background: rgba(0, 76, 232, 0.05);
+}
+.targets .target3{
+position: static;
+width: 364px;
+height: 300px;
+padding: 40px;
+order: 2;
+margin: 0px 24px;
+border-radius: 16px;
+background: rgba(255, 223, 0, 0.05);
+}
+.why-web-dev, .inspiration, .support {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.why-web-dev h2, .inspiration h2, .next-target h2, .support h2 {
+    margin-bottom: 30px;
+    font-size: 1.8em;
+}
+
+.next-target{
+position: static;
+width: 1140px;
+height: 869px;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+padding: 0px;
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+margin: 111px 0px;
+
+}
+.next-target.target4{
+    /* Frame 10 */
+position: static;
+width: 1140px;
+height: 220px;
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+padding: 40px;
+box-sizing: border-box;
+border: 1px solid rgba(13, 19, 33, 0.15);
+border-radius: 16px;
+
+background: rgb(255, 255, 255);
+
+
+/* Inside Auto Layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+margin: 0px 24px;
+}
+.next-target.target{
+    /* Frame 10 */
+position: static;
+width: 1140px;
+height: 219px;
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+padding: 40px;
+
+
+/* Inside Auto Layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+margin: 0px 24px;
+    box-sizing: border-box;
+border: 1px solid rgba(13, 19, 33, 0.15);
+border-radius: 16px;
+
+background: rgb(255, 255, 255);
+}
+
+
+.reasons {
+    width: 1140;
+    height: 1393;
     display: flex;
     gap: 32px;
-   
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
-.child{
-    padding: 32px;
-   }
 
+.reason {
+    background: #f4f4f4;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    flex: 1 1 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+}
 
+.reason img, .target img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
 
+.reason h3, .target h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.reason p, .target p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.learn-more {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.support form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.support{
+    background-image: url(images/handshake.jpg);
+    border-radius: 16px;
+
+background: rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2),url(Email);
+}
+.support input {
+    width: 300px;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.support .btn {
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .social-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer .social-links a:hover {
+    text-decoration: underline;
+}
