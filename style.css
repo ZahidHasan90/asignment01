@@ -5,8 +5,17 @@
     font-family: Arial, sans-serif;
 }
 
-
-
+.parent{
+    width: 1140;
+    height: 1395;
+    color:black;
+    display: flex;
+    gap: 32px;
+   
+}
+.child{
+    padding: 32px;
+   }
 
 
 
