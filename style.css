@@ -209,7 +209,7 @@ background: rgb(255, 255, 255);
 
 .reason {
     background: #f4f4f4;
-    padding: 20px;
+    padding: 20px; 
     margin: 10px;
     border-radius: 10px;
     flex: 1 1 30%;
@@ -243,9 +243,11 @@ background: rgb(255, 255, 255);
     justify-content: center;
     align-items: center;
 }
-.support{
+.container1{
     background-image: url(images/handshake.jpg);
     border-radius: 16px;
+    width: 100%;
+    height: 180px;
 
 background: rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2),url(Email);
 }
